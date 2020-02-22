@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/texthint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="The computer only considers a number from 1 to 1000"
+        android:layout_marginVertical="30dp"
+        android:textSize="15sp"
+        />
+    <ImageView
+        android:id="@+id/up"
+        android:layout_below="@id/texthint"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/up"
+        android:visibility="invisible"
+
+        />
+    <EditText
+        android:id="@+id/editnum"
+        android:layout_centerHorizontal="true"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/up"
+        />
+    <ImageView
+        android:id="@+id/down"
+        android:layout_below="@id/editnum"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/down"
+        android:visibility="invisible"
+
+
+        />
+    <ImageView
+        android:id="@+id/checkbtn"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/down"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/roundbtn"
+        android:visibility="visible"
+        android:onClick="checknum"
+
+        />
+    <ImageView
+        android:id="@+id/yes"
+        android:layout_alignLeft="@id/texthint"
+        android:layout_below="@id/checkbtn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/yes"
+        android:visibility="invisible"
+        />
+    <ImageView
+        android:id="@+id/no"
+        android:layout_alignRight="@id/texthint"
+        android:layout_below="@id/checkbtn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/no"
+        android:visibility="invisible"
+
+        />
+
+</RelativeLayout>
